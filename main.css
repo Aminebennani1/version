@@ -1,0 +1,329 @@
+
+
+#kid {
+    --line: #222;
+    --skin: #fca;
+    --hair: #963;
+    --iris: #69c;
+    --shirt: #fff;
+    --shadow: #5002;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    color: var(--line);
+    margin-left: -200px;
+}
+
+#kid div {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.neck {
+    width: 20%;
+    height: 20%;
+    background: var(--skin);
+    background-image: radial-gradient(circle at 50% -20%, var(--shadow) 65%, #0000 0);
+    top: 40%;
+    left: 63%;
+    border: 2px solid;
+    border-bottom: 2px;
+}
+
+.face {
+    width: 45%;
+    height: 60%;
+    background: var(--skin);
+    left: 50%;
+    top: -15%;
+    border-radius: 100% / 50% 50% 120% 120%;
+    border: 0.5vmin solid;
+    border-bottom-width: 3px;
+    border-top-width: 1px;
+    box-shadow:
+        inset -5px 0 var(--shadow),
+        inset 9px 0 var(--shadow)
+}
+
+.mouth {
+    width: 50%;
+    height: 12%;
+    border-bottom: 5px solid;
+    border-radius: 100% 0%;
+    transform: rotate(10deg);
+    top: 75%;
+    left: 25%;
+
+}
+
+.eye {
+    width: 20%;
+    height: 20%;
+    background: #fff;
+    border: 1px solid;
+    border-right-width: 2px;
+    top: 37%;
+    left: 12%;
+    border-radius: 100% / 100% 60% 10% 15%;
+    overflow: hidden;
+    transform: rotate(-4deg);
+    box-shadow:
+        0 -0.125vmin,
+        0 -2vmin 0 1vmin var(--skin),
+        -0.25vmin -6vmin 0 -0.5vmin;
+}
+
+.eye+.eye {
+    left: auto;
+    right: 12%;
+    transform: rotate(1deg);
+    border-left-width: 2px;
+    border-right-width: 1px;
+}
+
+.pupil {
+    left: 6%;
+    top: 24%;
+    width: 18px;
+    height: 20px;
+    background: var(--iris);
+    border-radius: 50%;
+    border: 1.5px solid;
+    background-image:
+        radial-gradient(circle at 30% 32%, #fff 7%, #0000 0),
+        radial-gradient(circle at 40% 27%, #fff 4%, #0000 0),
+        radial-gradient(var(--line) 35%, #0000 0);
+}
+
+.nose {
+    width: 20%;
+    height: 12%;
+    border-radius: 50%;
+    top: 60%;
+    left: 38%;
+    box-shadow: 0.5vmin -0.5vmin;
+    background: var(--skin);
+}
+
+.bodyy {
+    background: blue;
+    width: 70%;
+    height: 69%;
+    border-radius: 15% 15% 0% 0%;
+    top: 55%;
+    left: 39%;
+    box-shadow:
+        0 -2px 0 0.1px,
+        inset 0 1px var(--shadow);
+    background-image:
+        radial-gradient(circle at 50% -20%, var(--skin) 27%, var(--line) 0 28%, transparent 0);
+}
+
+.ear {
+    width: 10%;
+    height: 20%;
+    background: var(--skin);
+    border: 0.5vmin solid;
+    border-radius: 100% / 50% 50% 20% 120%;
+    box-shadow: -0.125vmin -0.25vmin;
+    top: 8%;
+    left: 43%;
+    transform: rotate(-5deg);
+}
+
+.ear+.ear {
+    left: 92%;
+    transform: rotate(7deg);
+    border-radius: 100% / 50% 50% 120% 20%;
+}
+
+.hair {
+    position: absolute;
+    border: 1px solid var(--hair);
+    background-color: var(--hair);
+    width: 45%;
+    height: 45%;
+    top: -21%;
+    left: 50%;
+    border-radius: 100% 100%;
+    box-shadow: inset 50px;
+    z-index: -1;
+}
+
+.arm1 {
+    position: absolute;
+    right: 530px;
+    border: 1px black solid;
+    width: 28px;
+    height: 140px;
+    transform: rotate(130deg);
+    background-color: rgb(12, 12, 12);
+    top: 6%;
+    margin: auto;
+    bottom: 131PX;
+    z-index: -3;
+
+}
+
+.hand2 {
+    position: absolute;
+
+    height: 80px;
+    width: 25px;
+    margin: auto;
+    top: 17.9%;
+    right: 470px;
+    border: rgb(0, 0, 0) 2px solid;
+    bottom: 96px;
+    z-index: 4;
+    transform: rotate(310deg);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: antiquewhite;
+
+}
+
+.hand1 {
+    position: absolute;
+    left: 500px;
+    border: 1px black solid;
+    border-radius: 30%;
+    width: 28px;
+    height: 125px;
+    transform: rotate(46deg);
+    background-color: rgb(12, 12, 12);
+    top: 5.9%;
+    margin: auto;
+    bottom: 120PX;
+    z-index: -2;
+
+}
+
+.pocket {
+    position: absolute;
+
+    height: 60px;
+    width: 35px;
+    margin-left: 30px;
+    top: 105px;
+
+    border: rgb(0, 0, 0) 0px solid;
+
+    z-index: 4;
+    transform: rotate(-450deg);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: blue;
+
+}
+
+.soso1 {
+    position: absolute;
+    left: 509px;
+    border: 1px black solid;
+    width: 28px;
+    height: 125px;
+    transform: rotate(-67deg);
+    background-color: antiquewhite;
+    border-radius: 30%;
+    top: 6%;
+    margin: auto;
+    bottom: -1PX;
+    z-index: 3;
+}
+.leg1{
+    
+        background-color: antiquewhite;
+        position: absolute;
+        top:60%;
+        height: 150px;
+        width: 8px;
+        transform: rotate(180deg);
+        right: 580PX;
+        border: 2px solid black;
+        border-radius: 30% 70% 50% 50% / 5% 0% 10% 10%;
+        padding: 10px;
+        margin: auto;
+        bottom: 9px;
+        z-index: -10;
+    
+}
+.leg2{
+    background-color: antiquewhite;
+        position: absolute;
+        top:60%;
+        height: 150px;
+        width: 8px;
+        transform: rotate(180deg);
+        right: 54%;
+        border: 2px solid black;
+        border-radius: 30% 70% 50% 50% / 5% 0% 10% 10%;
+        padding: 10px;
+        margin: auto;
+        bottom: 9px;
+        z-index: -10;
+}
+.sbat1{
+    background-color: rgb(198, 121, 49);
+    position: absolute;
+    top:46%;
+    height: 20px;
+    width: 50px;
+    transform: rotate(180deg);
+    right: 54%;
+    border: 2px solid black;
+    border-radius: 10px ;
+    padding: 1px;
+    margin: auto;
+    bottom: -240px;
+    z-index: -1;
+
+}
+.sbat2{
+    background-color: rgb(198, 121, 49);
+    position: absolute;
+    top:46%;
+    height: 20px;
+    width: 50px;
+    transform: rotate(180deg);
+    right: 45%;
+    border: 2px solid black;
+    border-radius: 10px ;
+    padding: 1px;
+    margin: auto;
+    bottom: -240px;
+    z-index: 2;
+
+}
+
+
+   /* background-image: url(beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.avif);
+    background-size: 100% 100vh;*/
+    .bg{
+        
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -10;
+    }
+
+
+.srwal{
+    background-color:black;
+   
+    position: absolute;
+    top:50%;
+    left: 42.2%;
+   z-index: -7;
+    width:75px;
+     height: 2px;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 20%;
+    
+    margin: auto;
+}
